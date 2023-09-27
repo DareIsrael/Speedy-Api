@@ -11,7 +11,7 @@ const cargoSchema = new Schema ({
         type: String,
         require: true
     },
-    email: {
+    email2: {
         type: String,
         required: true
     },
