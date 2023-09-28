@@ -67,7 +67,7 @@ const app = express();
 // Enable CORS middleware
 app.use(cors({
    credentials: true,
-   origin: "https://speedyspell-cargo.onrender.com/"
+   origin: "https://speedyspell-cargo.onrender.com"
  }));
 
 
