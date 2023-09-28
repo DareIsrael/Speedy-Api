@@ -61,6 +61,7 @@ const postRoutes = require("./routes/postRoutes");
 const customerRoutes = require("./routes/userRoutes");
 const userRoutes = require("./routes/userRoutes");
 
+
 const app = express();
 
 // Enable CORS middleware
@@ -82,6 +83,7 @@ app.use("/api/courier", courierConsignorRoutes);
 app.use("/api/post", postRoutes);
 app.use("/api/customer", customerRoutes);
 app.use("/api/user", userRoutes);
+
 
 mongoose
   .connect(process.env.MONGO_URL)

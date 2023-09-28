@@ -55,6 +55,9 @@
     "mongoose": "^7.4.5",
 
 
+    "node-fetch": "^3.3.2",
+
+
     "nodemon": "^3.0.1",
 
 
