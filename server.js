@@ -4,7 +4,7 @@
 
 require("dotenv").config();
 const express = require("express");
-const path = require('path');
+
 const mongoose = require("mongoose");
 const cors = require("cors"); // Import the cors middleware
 const cargoRoutes = require("./routes/cargoRoutes");
@@ -37,11 +37,8 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('*', (req, res) => {
-   res.sendFile(path.join(__dirname, 'public', 'index.html'));
- });
+
 
 app.use("/api/cargo", cargoRoutes);
 app.use("/api/truck", consignorRoutes);
