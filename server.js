@@ -64,10 +64,13 @@ const userRoutes = require("./routes/userRoutes");
 
 const app = express();
 
+
 // Enable CORS middleware
+const allowedOrigin = ["https://speedyspell-cargo.onrender.com", "https://speedyspell-admin-control.onrender.com"
+]
 app.use(cors({
    credentials: true,
-   origin: "https://speedyspell-cargo.onrender.com"
+   origin: allowedOrigin
  }));
 
 
